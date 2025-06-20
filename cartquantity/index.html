@@ -8,28 +8,13 @@
 </head>
 
 <body>
-  <button onclick="console.log(`cart: ${cartquantity}`)">
+  <button id="displaybutton">
     view quantity</button>
-  <button onclick=" cartquantity=cartquantity+1;
-    console.log(`cart: ${cartquantity}`);">
-    +1
-  </button>
-  <button onclick="cartquantity=cartquantity+2;
-    console.log(`cart: ${cartquantity}`);">
-    +2
-  </button>
-  <button onclick="cartquantity=cartquantity+3;
-    console.log(`cart: ${cartquantity}`);">
-    +3
-  </button>
-  <button onclick="
-  cartquantity=0;
-    console.log(`cart: ${cartquantity}`);">
-    reset cart
-  </button>
-  <script>
-    let cartquantity = 0;
-  </script>
+  <button id="plus1button">+1</button>
+  <button id="plus2button">+2</button>
+  <button id="plus3button">+3</button>
+  <button id="resetbutton">resetcart</button>
+  <script src="/cartquantity/script.js"></script>
 </body>
 
 </html>
