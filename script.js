@@ -9,9 +9,9 @@
 console.log("hi")
 console.warn("warning")
 console.error("Danger error") 
-console.table([{ name: "surenthar v b", age: 33 }])
+console.table([{ name: "surenthar v b", age: 33 }]);
 console.time("loop")
-for(let i=0;i<100000000;i++){ }
+for(let i=0;i<1000000000000;i++){ }
 console.timeEnd("loop")
 
 //eval() function
