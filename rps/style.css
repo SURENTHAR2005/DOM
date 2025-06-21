@@ -1,0 +1,48 @@
+#maindiv{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+#head1{
+ text-align:center;
+ font-size:65px;
+ color:#f81b1b;
+
+}
+#playarea{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+#sidehead{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    width:100%;
+}
+
+h2,#h11{
+    padding:5px 35px;
+    font-size:50px;
+    color: rgb(255, 147, 38);
+}
+#butt-div{
+    padding:0px 10px;
+    display:flex;
+    flex-wrap:wrap;
+    
+    /* justify-content:getw; */
+    padding:0px 30px;
+    
+}
+button{
+    margin:20px;
+    border:#f81b1b solid 1px;
+    width:70px;
+    height:50px;
+    border-radius:10px;
+}

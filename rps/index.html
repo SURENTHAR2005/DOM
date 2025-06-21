@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROCK PAPER SISSOR</title>
+    <link href="/rps/style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-    <h1>ROCK PAPER SISSOR</h1>
-    <h2>you VS computer</h2>
-    <button id="rock-B">ROCK</button>
-    <button id="paper-B">PAPER</button>
-    <button id="sissor-B">SISSOR</button>
-    <h1 class="result-B">THE RESULT OF THE MATCH IS </h1>
+    <div id="maindiv">
+        <h1 id="head1">ROCK PAPER SISSOR</h1>
+        <div id="playarea">
+            <div id="user">
+                <h2>YOU</h2>
+                <div id="butt-div">
+                    <button id="rock-B">ROCK</button>
+                    <button id="paper-B">PAPER</button>
+                    <button id="sissor-B">SISSOR</button>
+                </div>
+            </div>
+            <div id="computer">
+                <button class="cp"> computer</button>
+            </div>
+            <div id="res">
+                <h1 class="result-B">THE RESULT OF THE MATCH IS </h1>
+            </div>
+        </div>
+    </div>
     <script src="/rps/script.js"></script>
 </body>
+
 </html>
