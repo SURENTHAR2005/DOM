@@ -2,7 +2,7 @@
 let rock = document.getElementById("rock-B");
 let paper = document.getElementById("paper-B");
 let sissor = document.getElementById("sissor-B");
-
+let comp=document.querySelector(".comp");
 //computer move
 function getcomp() {
     let randomVal = Math.random();
@@ -23,18 +23,21 @@ let userMove;
 rock.addEventListener("click", () => {
     userMove = "ROCK";
     let computerMove = getcomp();
+    comp.innerText=computerMove;
     rockfunc(userMove, computerMove);
 });
 
 paper.addEventListener("click", () => {
     userMove = "PAPER";
     let computerMove = getcomp();
+    comp.innerText=computerMove;
     paperfunc(userMove, computerMove);
 });
 
 sissor.addEventListener("click", () => {
     userMove = "SISSOR";
     let computerMove = getcomp();
+    comp.innerText=computerMove;
     sissorfunc(userMove, computerMove);
 });
 

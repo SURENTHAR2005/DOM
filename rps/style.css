@@ -1,48 +1,98 @@
-#maindiv{
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-}
-#head1{
- text-align:center;
- font-size:65px;
- color:#f81b1b;
-
-}
-#playarea{
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-}
-#sidehead{
-    display:flex;
+#maindiv {
+    display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
-    width:100%;
+    flex-direction: column;
 }
 
-h2,#h11{
-    padding:5px 35px;
-    font-size:50px;
-    color: rgb(255, 147, 38);
+#head1 {
+    text-align: center;
+    color: #00cc66;
+    padding: 40px;
+    background-image: url('./rock-paper-scissors-neon-icons.jpg');
 }
+
+#playarea {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#playarea1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height:450px;
+    /* justify-content:center; */
+}
+
+#user {
+    background-color:#d4f5d4;
+    border-radius: 5px;
+    /* border: 3px rgb(0, 149, 0) dotted; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    justify-content:center;
+}
+
+#h22 {
+    color: 	#228B22;
+}
+
 #butt-div{
-    padding:0px 10px;
     display:flex;
     flex-wrap:wrap;
-    
-    /* justify-content:getw; */
-    padding:0px 30px;
-    
+    align-items:center;
+    flex-direction: column;
+    /* padding:10px 10px; */
 }
 button{
-    margin:20px;
-    border:#f81b1b solid 1px;
-    width:70px;
-    height:50px;
-    border-radius:10px;
+    padding:18px 130px;
+    border-radius:30px;
+    margin-bottom:20px;
+    font-weight:bold;
+    color:#1a1a1a;
+    font-size:21px;
+    background-color: 	#f0f0f0;
+}
+
+#computer {
+    /* border:3px rgb(253, 54, 54) dotted; */
+    border-radius: 5px;
+    background-color: #f8d7da;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#h23{
+    color:	#c0392b;
+}
+.comp{
+    background-color:#f0f8ff;
+    border-radius:30px;
+    padding:25px;
+    border:black solid 1px;
+}
+#res{
+    width:100%;
+    height:130px;
+    /* min-height:100vh; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:	#ffffff;
+}
+.result-B{
+    color:	#ffcc00;
+    font-size:50px;
 }
