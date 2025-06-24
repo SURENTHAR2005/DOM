@@ -35,18 +35,58 @@
 // });
 
 //promices
-let order = new Promise((resolve, reject) => {
-    let isOverWorking = true;
-    setTimeout(() => {
-        if (isOverWorking) {
-            resolve("order is ready");
-        } else {
-            reject("order delay");
-        }
-    }, 3000);
-});
-order
-    .then((message) => { console.log("Success: ", message); })
-    .catch((error) => {
-        console.log("Error: ", error);
+// let order = new Promise((resolve, reject) => {
+//     let isOverWorking = true;
+//     setTimeout(() => {
+//         if (isOverWorking) {
+//             resolve("order is ready");
+//         } else {
+//             reject("order delay");
+//         }
+//     }, 3000);
+// });
+// order
+//     .then((message) => { console.log("Success: ", message); })
+//     .catch((error) => {
+//         console.log("Error: ", error);
+//     });
+
+//try catch final
+// try{
+//     // let result=10/0;
+//     // console.log(result);
+//     let name=undefined;
+//     console.log(name.toUpperCase());
+// }catch(error){
+//     console.log(`error: ${error}`);
+// }finally{
+//     console.log("task completed");
+// }
+
+
+
+
+
+//async /await
+function orderFunction() {
+    let order = new Promise((resolve, reject) => {
+        let isOverWorking = false;
+        setTimeout(() => {
+            if (isOverWorking) {
+                resolve("order is ready");
+            } else {
+                reject("order delay");
+            }
+        }, 3000);
     });
+    return order;
+}
+async function orderFood() {
+    try{
+    const orderStatus = await orderFunction();
+    console.log(orderStatus);
+    }catch(error){
+        console.log(`error : ${error}`);
+    }
+}
+orderFood();
